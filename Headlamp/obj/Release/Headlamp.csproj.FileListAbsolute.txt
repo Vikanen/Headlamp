@@ -1,0 +1,5 @@
+C:\Users\Janne\Desktop\Headlamp\RallyLights\obj\Release\Headlamp.csprojResolveAssemblyReference.cache
+C:\Users\Janne\Desktop\Headlamp\RallyLights\obj\Release\Headlamp.dll
+C:\Users\Janne\Desktop\Headlamp\Release\Headlamp.dll
+C:\Users\Janne\Desktop\Headlamp\Headlamp\obj\Release\Headlamp.csprojResolveAssemblyReference.cache
+C:\Users\Janne\Desktop\Headlamp\Headlamp\obj\Release\Headlamp.dll
