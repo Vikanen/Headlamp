@@ -26,7 +26,7 @@ namespace RallyLights
         void FindPlayer()
         {
             Thread.Sleep(9000);
-            PLAYER = GameObject.Find("PLAYER");
+            PLAYER = GameObject.Find("FPSCamera");
             LampOff = true;
             new Thread(LoadLight).Start();
         }
@@ -43,8 +43,8 @@ namespace RallyLights
             lightComp.intensity = 1;
             lightComp.range = 10;
             lightGameObject.transform.parent = PLAYER.transform;
-            lightGameObject.transform.localPosition = new Vector3(0, 1.3f, 0.01f);
-            lightGameObject.transform.localEulerAngles = new Vector3(10, 0, 0);
+            lightGameObject.transform.localPosition = new Vector3(0, 0, 0);
+            lightGameObject.transform.localEulerAngles = new Vector3(0, 0, 0);
         }
 
 
