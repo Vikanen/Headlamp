@@ -40,8 +40,8 @@ namespace RallyLights
             lightComp.color = Color.white;
             lightComp.type = LightType.Spot;
             lightComp.spotAngle = 70;
-            lightComp.intensity = 1;
-            lightComp.range = 10;
+            lightComp.intensity = 5;
+            lightComp.range = 20;
             lightGameObject.transform.parent = PLAYER.transform;
             lightGameObject.transform.localPosition = new Vector3(0, 0, 0);
             lightGameObject.transform.localEulerAngles = new Vector3(0, 0, 0);
