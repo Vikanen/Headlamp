@@ -9,7 +9,7 @@ namespace RallyLights
         public override string ID => "Headlamp";
         public override string Name => "Headlamp";
         public override string Author => "Vikanen";
-        public override string Version => "1.0a";
+        public override string Version => "1.0";
 
         private Keybind LampKey = new Keybind("KeyID", "Key name", KeyCode.KeypadMinus);
 		
