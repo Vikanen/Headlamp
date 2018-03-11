@@ -1,14 +1,14 @@
 ﻿using MSCLoader;
 using UnityEngine;
 
-namespace RallyLights
+namespace Headlamp
 {
-    public class RallyLights : Mod
+    public class Headlamp : Mod
     {
         public override string ID => "Headlamp";
         public override string Name => "Headlamp";
         public override string Author => "Vikanen";
-        public override string Version => "1.1";
+        public override string Version => "1.2";
 
         private Keybind LampKey = new Keybind("KeyID", "Key name", KeyCode.KeypadMinus);
 		
@@ -25,24 +25,24 @@ namespace RallyLights
 
         public override void Update()
         {
-
             if (!fullyLoaded)
             {
-                if (GameObject.Find("PLAYER") != null)
+                if (GameObject.Find("FPSCamera") != null)
                 {
                     PLAYER = GameObject.Find("FPSCamera");
-                    fullyLoaded = true;
 
                     lightGameObject = new GameObject("HeadlampLight");
                     Light lightComp = lightGameObject.AddComponent<Light>();
                     lightComp.color = Color.white;
                     lightComp.type = LightType.Spot;
                     lightComp.spotAngle = 70;
-                    lightComp.intensity = 5;
+                    lightComp.intensity = 4;
                     lightComp.range = 20;
                     lightGameObject.transform.parent = PLAYER.transform;
                     lightGameObject.transform.localPosition = new Vector3(0, 0, 0);
                     lightGameObject.transform.localEulerAngles = new Vector3(0, 0, 0);
+
+                    fullyLoaded = true;
                 }
             }
 
